@@ -17,6 +17,7 @@ I'll just lay out the way my BIOS is shown and whatever is ticked/selected so yo
 
 ## System Configuration
 - **Integrated NIC** - Untick "Enable UEFI Network Stack" and select Enabled (or not, if you don't want Ethernet)
+- **Serial Port** - disabled
 - **SATA Operation** - Select "AHCI" and make sure its enabled before installing anything, RAID On is only a driver for Windows 7 which didn't support RAID at the time, you want the AHCI option here
 - **Drives** - Leave all ticked, may be different for you. I had SATA-0, SATA-4 and M.2 PCIe SSD-0.
 - **SMART Reporting** - "Enable SMART Reporting" is enabled/ticked. Probably doesn't matter, but I like to have it on
@@ -70,7 +71,7 @@ I'll just lay out the way my BIOS is shown and whatever is ticked/selected so yo
 - **Deep Sleep Control** - Disabled
 - **USB Wake Support** - This is unticked
 - **Wake on LAN/WLAN** - Disabled
-- **Block Sleep** - "Block Sleep (S3 State)" is unticked
+- **Block Sleep** - "Block Sleep (S3 State)" is ticked
 - **Intel Ready Mode** - Disabled
 
 ## POST Behaviour
@@ -88,7 +89,7 @@ I'll just lay out the way my BIOS is shown and whatever is ticked/selected so yo
 
 ## Virtualization Support
 - **Virtualization** - Enabled
-- **VT for Direct I/O** - Enabled, double check if DisableIOMapper is set to YES. [More info here.](https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake.html#kernel)
+- **VT for Direct I/O** - Disabled
 - **Trusted Execution** - Disabled, it will probably be greyed out
 
 ## Wireless
